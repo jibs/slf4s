@@ -3,7 +3,7 @@ organization := "com.weiglewilczek.slf4s"
 
 name := "slf4s"
 
-version := "1.0.7"
+version := "1.0.8"
 
 scalaVersion := "2.9.2"
 
@@ -16,13 +16,6 @@ crossScalaVersions := Seq(
     "2.10.0-M6")
 
 libraryDependencies ++= Seq(
-    "org.slf4j" % "slf4j-api" % "1.6.1")
+    "org.slf4j" % "slf4j-api" % "1.7.0")
 
-publishTo <<= (version) { v => 
-  if (v endsWith "SNAPSHOT")
-    Some("ScalaTools-Nexus-Snapshots" at "http://nexus.scala-tools.org/content/repositories/snapshots/")
-  else
-    Some("ScalaTools-Nexus-Releases" at "http://nexus.scala-tools.org/content/repositories/releases/")
-}
-
-credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))

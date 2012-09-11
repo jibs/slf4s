@@ -10,23 +10,35 @@ SLF4S is open source software licensed under the "Apache 2.0 License":http://www
 
 h2. Getting SLF4S
 
-The binaries are made available in the "Scala-Tools.org Maven repository":http://scala-tools.org/repo-releases/com/weiglewilczek/slf4s/.
+Publish to local maven repo:
+
+<pre><code>sbt publish</code></pre>
+
 
 h3. For SBT
 
 <pre><code>val slf4s = "com.weiglewilczek.slf4s" %% "slf4s" % "1.0.7</code></pre>
 
-Supported Scala versions are 2.8.0, 2.8.1, 2.9.0-1 and 2.9.1.
+Supported Scala versions are 2.8.0, 2.8.1, 2.9.0-1, 2.9.1 and 2.9.2.
 
 h3. For Maven
 
 <pre><code><dependency>
   <groupId>com.weiglewilczek.slf4s</groupId>
-  <artifactId>slf4s_2.9.1</artifactId>
-  <version>1.0.7</version>
+  <artifactId>slf4s_2.9.2</artifactId>
+  <version>1.0.8</version>
 </dependency></code></pre>
 
 Replace the suffix of the artifactId to represent one of the supported Scala versions (see above).
+
+For logback add this to your app code
+
+<pre><code><dependency>
+<groupId>ch.qos.logback</groupId>
+<artifactId>logback-classic</artifactId>
+<version>1.0.7</version>
+</dependency></code></pre>
+
 
 h2. Using SLF4S
 
