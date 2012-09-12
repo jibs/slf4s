@@ -18,4 +18,7 @@ crossScalaVersions := Seq(
 libraryDependencies ++= Seq(
     "org.slf4j" % "slf4j-api" % "1.7.0")
 
-publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))
+//publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))
+
+publishTo := Some(Resolver.file("file",  new File("./repo")))
+
