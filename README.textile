@@ -1,5 +1,8 @@
 h1. SLF4S
 
+!http://static.guim.co.uk/sys-images/Guardian/Pix/online/2012/9/13/1347526529901/A-new-species-of-monkey-k-007.jpg!
+Credit: Guardian
+
 SLF4S (Simple Logging Facade for Scala) is a thin "Scala":http://www.scala-lang.org wrapper around "SLF4J":http://www.slf4j.org offering the following features:
 
 * _Logging_ trait to easily mix in a _Logger_ initialized with the class name
